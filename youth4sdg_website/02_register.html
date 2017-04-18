@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youth4SDG</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入样式 element-ui -->
+    <link rel="stylesheet" href="plugins/element-ui/index.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper" id="index-page">
+        <!--main header-->
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <h1 class="logo">
+                            <img src="img/logo.png" alt="">
+                        </h1>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-tabs toPart"><a href="index.html#part1" class="toPart1">SDGs</a></li>
+                            <li class="nav-tabs toPart"><a href="index.html#part2" class="toPart2">Advocate</a></li>
+                            <li class="nav-tabs toPart"><a href="index.html#part3" class="toPart3">Actions</a></li>
+                            <li class="nav-tabs toPart"><a href="index.html#part4" class="toPart4">Projects</a></li>
+                            <li class="nav-tabs toPart"><a href="index.html#part5" class="toPart5">Join Us</a></li>
+                            <li class="nav-tabs control controlToLogin"><a class="toLogin" href="01_login.html"></a></li>
+                            <li class="nav-tabs control"><a class="toChinese" href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--main content-->
+        <section class="container">
+            <div class="row">
+                <div class="box register-box">
+                    <div class="box-title">
+                        <h3>Welcome Register</h3>
+                        <h3>Join us and explore more about SDG!</h3>
+                    </div>
+                    <div class="box-body row">
+                        <!--左边的-->
+                        <div class="left-side col-md-8 col-sm-8 col-xs-12">
+                            <h2>Create a New Account</h2>
+                            <div class="form-group row">
+                                <label class="col-md-4 col-sm-12 col-xs-12"><span>Email：</span></label>
+                                <input class="col-md-7 col-sm-11 col-xs-12" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-4 col-sm-12 col-xs-12"><span>Password:</span></label>
+                                <input class="col-md-7 col-sm-11 col-xs-12" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-4 col-sm-12 col-xs-12"><span>Confirm Password:</span></label>
+                                <input class="col-md-7 col-sm-11 col-xs-12" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-4 col-sm-12 col-xs-12"><span>Telephone number：</span></label>
+                                <input class="col-md-7 col-sm-11 col-xs-12" type="text">
+                            </div>
+
+                            <div class="form-group telephone-code-form row">
+                                <label class="col-md-4 col-sm-12 col-xs-12"><span>Telephone Code:</span></label>
+                                <div class="col-md-7 col-sm-11 col-xs-12">
+                                    <input class="col-md-8 col-sm-8 col-xs-8" type="text">
+                                    <input class="btn col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-3" type="button" value="Get Code">
+                                </div>
+                            </div>
+                            <!--左边的btn-->
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-offset-2 col-xs-8 box-footer">
+                                <a href="javascript:;" class="btn">Register Now</a>
+                            </div>
+                        </div>
+                        <!--右边的-->
+                        <div class="right-side col-md-4 col-sm-4 col-xs-12">
+                            <div class="col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-12">
+                                <a href="12_news_list.html"><p>News</p></a>
+                            </div>
+                            <div class="col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-12">
+                                <a href="05_advocate_application.html"><p>Become Youth Advocate</p></a>
+                            </div>
+                            <div class="col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-12">
+                                <a href="10_action_application.html"><p>Share Your Actions</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <el-row :gutter="20">
+                <el-col :span="6" :offset="1">
+                    <p>PROGRAM</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">Advocate</a></li>
+                        <li><a href="javascript:void(0)">Hub</a></li>
+                        <li><a href="javascript:void(0)">Youth Actions</a></li>
+                        <li><a href="javascript:void(0)">Projects</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="6">
+                    <p>SOCIAL MEDIA</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">Facebook</a></li>
+                        <li><a href="javascript:void(0)">Twitter</a></li>
+                        <li><a href="javascript:void(0)">Weibo</a></li>
+                        <li><a href="javascript:void(0)">Wechat</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="6">
+                    <p>PARTICIPATE</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">About Us</a></li>
+                        <li><a href="javascript:void(0)">Join Us</a></li>
+                        <li><a href="javascript:void(0)">Member Center</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="5">
+                    <p>INFORMATION</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">News</a></li>
+                        <li><a href="javascript:void(0)">SDGs</a></li>
+                    </ul>
+                </el-col>
+            </el-row>
+        </footer>
+
+    </div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src='js/mapbox/mapbox.js'></script>
+    <link href='css/api.mapbox.css' rel='stylesheet' />
+<!--<link href='js/mapbox/mapbox.css' rel='stylesheet' />-->
+<script src="plugins/vue/vue.js"></script>
+<!-- 引入组件库 element-ui -->
+<script src="plugins/element-ui/index.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+
+</html>

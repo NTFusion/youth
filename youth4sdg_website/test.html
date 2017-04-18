@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youth4SDG</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--main content-->
+        <section class="container">
+
+
+
+            <div id="draw" style="width:360px;height: 500px; border: 1px solid #000; position: relative; ">
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <style>
+        #draw{
+            background: url(img/photo2.png) repeat-y;
+            background-size: 100%;
+        }
+        .new_box{
+            background: #00729c;
+            filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;
+            border: 1px #70e2fe solid;
+            position: absolute;
+
+        }
+        .new_box p{
+            color: #fff;
+        }
+        .new_box a{
+            color: #fff;
+            position: absolute;
+            border: 1px #70e2fe solid;
+            right: -8px;
+            top: -8px;
+            display: none;
+            background: #003b51;
+            border-radius: 50%;
+            font-size: 16px;
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .new_box a:hover {
+            background:#fff;
+            color: #003b51;
+        }
+    </style>
+
+
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        $(function () {
+            var drawAreaWidth=356;   //画布容器的宽度
+            var drawAreaHeight=496;  //画布容器的高度
+            var boxMinSize=48;       //绘制BOX的最小尺寸
+            var startX,startY,endX,endY,width,height;
+            //绘制开始X坐标,开始Y坐标,结束X坐标,结束Y坐标,BOX的宽度,BOX的高度
+            var num=1;       //绘制BOX的产生个数
+            var dragging=false;     //是否在绘制状态，初始化false
+            $('#draw').mousedown(function(e) {
+                startX=e.pageX-$(this).offset().left; //获取当前鼠标相对画布容器的X坐标
+                startY=e.pageY-$(this).offset().top; //获取当前鼠标相对画布容器的Y坐标
+                //检测鼠标开始点击位置是否在画布容器的空白位
+                if($(e.target).attr('id')=='draw') {
+                    //生成新绘制的BOX
+                    var append_string = "<div class='new_box actived_box' style='cursor:crosshair;left:" + startX + "px;top:" + startY + "px;width:" + width + "px;height:" + height + "px;' id='box" + num + "'><p></p><a href='javascript:;'>x</a></div>"
+                    $('#draw').append(append_string);
+                    //为新绘制BOX，绑定删除按钮事件
+                    $('#draw').on('click', '#box'+num, function (event) {
+                        $('.new_box').find("a").css('display', 'none');
+                        $(this).find("a").css('display', 'block');
+                        $(this).on('click', 'a', function (event) {
+                            $(this).parent('.new_box').remove();
+                        });
+                    });
+                    dragging=true;
+                }
+            });
+            $('#draw').mousemove(function(e) {
+                endX=e.pageX-$(this).offset().left; //获取当前鼠标相对画布容器的X坐标
+                endY=e.pageY-$(this).offset().top; //获取当前鼠标相对画布容器的Y坐标
+                width = endX-startX; //计算矩形的宽度
+                height = endY-startY; //计算矩形的高度
+                $('.actived_box').css('width',width);
+                $('.actived_box').css('height',height);
+                $('.actived_box p').text(width+' X '+height);
+                //超出画布范围，撤销绘制
+                if(width+startX>drawAreaWidth || height+startY>drawAreaHeight){exitDrawing(num);}
+            });
+            $('#draw').mouseup(function(e) {
+                //如果BOX小于20，撤销绘制
+                if($('.actived_box').width()<boxMinSize || $('.actived_box').height()<boxMinSize){exitDrawing(num);}
+                else{
+                    //绘制完，为刚绘制好的BOX绑定事件,检测绘制新的BOX，如果鼠标是否经过已有的BOX，撤销绘制
+                    $('#draw').on('mouseenter','#box'+num,function(event) {
+                        if(dragging){exitDrawing(num);}
+                    });
+                }
+                //绘制成功，结束
+                if($('.actived_box').length>0){
+                    $('.actived_box').removeClass('actived_box');
+                    dragging=false;num++;
+                }
+            });
+            //撤销当前绘制
+            function exitDrawing(activebox){
+                $('#box'+activebox).remove();
+                dragging=false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

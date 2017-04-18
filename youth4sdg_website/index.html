@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youth4SDG</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入样式 element-ui -->
+    <link rel="stylesheet" href="plugins/element-ui/index.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper" id="index-page">
+        <!--main header-->
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <h1 class="logo">
+                                <img src="img/logo.png" alt="">
+                        </h1>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-tabs toPart"><a class="toPart1">SDGs</a></li>
+                            <li class="nav-tabs toPart"><a class="toPart2">Advocate</a></li>
+                            <li class="nav-tabs toPart"><a class="toPart3">Actions</a></li>
+                            <li class="nav-tabs toPart"><a class="toPart4">Projects</a></li>
+                            <li class="nav-tabs toPart"><a class="toPart5">Join Us</a></li>
+                            <li class="nav-tabs control controlToLogin"><a class="toLogin" href="01_login.html"></a></li>
+                            <li class="nav-tabs control"><a class="toChinese" href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!--slide show-->
+        <div class="row carousel-banner">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/banner01.jpg" alt="">
+
+                        <div class="text-introduce">
+                            <h1>Join Our Global Family<br>of Youth4SDG Advocate!</h1>
+                            <div class="banner-btn"><a class="javascript:;">Apply Now !</a></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner02.jpg" alt="">
+                        <div class="text-introduce">
+                            <h1>Your World Need Your Action<br>to Realize a Sustainable Future!</h1>
+                            <div class="banner-btn"><a class="javascript:;">Apply Now !</a></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner03.jpg" alt="">
+                        <div class="text-introduce">
+                            <h1>Transform Our World-<br>the Sustainable Development Goals</h1>
+                            <div class="banner-btn"><a class="javascript:;">Apply Now !</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-model row news-preview">
+                <div class="grid-model-group col-xs-12 col-sm-11">
+                    <div class="col-xs-6 col-sm-3 grid-model-item-wrapper">
+                        <div class="grid-model-item">
+                            <a href="12_01_news_detail.html">
+                                <div class="cover">
+                                    <img src="img/09.gif" alt="">
+                                    <span>
+                                            Youth4SDG Annual Meeting 2016 held in Shenzhen
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 grid-model-item-wrapper">
+                        <div class="grid-model-item">
+                            <a href="12_02_news_detail.html">
+                                <div class="cover">
+                                    <img src="img/11.gif" alt="">
+                                    <span>
+                                            Announcing First UN Young leaders for the Sustaina ...
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 grid-model-item-wrapper">
+                        <div class="grid-model-item">
+                            <a href="12_03_news_detail.html">
+                                <div class="cover">
+                                    <img src="img/13.gif" alt="">
+                                    <span>
+                                            On International Day, UN says youth can lead global
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 grid-model-item-wrapper">
+                        <div class="grid-model-item">
+                            <a href="12_04_news_detail.html">
+                                <div class="cover">
+                                    <img src="img/15.gif" alt="">
+                                    <span>
+                                            The First Training Camp Deeply Learning UN Sustainable Development Global in the ...
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-model-right col-sm-1">
+                    <a href="12_news_list.html">
+                        <img src="img/18.gif" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--main content-->
+        <section class="container">
+            <div class="row row1">
+                <div id="part1" class="box part1">
+                    <div class="box-title">
+                        <h1>About SDGs</h1>
+                    </div>
+                    <div class="box-body row">
+                        <div class="left-side col-sm-12 col-md-6">
+                            <h2>How will the SDG goals be funded?</h2>
+                            <p>The United Nations Sustainable Development Goals (SDGs) are ambitious. And deliberately so. Spearheaded by the target of ending extreme poverty by 2030, the 17 “Global Goals” are essentially an international charter for sustainability.</p>
+                            <a href="09_01_about_SDGs_detail.html" class="btn">READ MORE</a>
+                        </div>
+                        <div class="right-side col-xs-12 col-md-6 col-lg-6">
+                            <div class="right-grid grid-one col-xs-6 col-md-6 col-lg-6">
+                                    <h2>
+                                        THE RELATIONSHIP <br>BETWEEN SDG AND MDG GOALS
+                                    </h2>
+                                    <p>
+                                        These goals were created through another United Nations-sponsored process and agreed upon back in 2000. They came about with many...
+                                    </p>
+                                    <a href="09_02_about_SDGs_detail.html" class="btn">READ MORE</a>
+                                </div>
+                            <div class="right-grid grid-two col-xs-6 col-md-6 col-lg-6">
+                                    <div class="img-arrow"></div>
+                                    <h2>
+                                        SIX STEPS TO REALISING THE SUSTAINABLE DEVELOPMENT GOALS
+                                    </h2>
+                                    <p>
+                                        For starters, member states avoided actual quantified benchmarks for 2030 for many of the targets, which means we will never definitively be able to assess whether they have been met or...
+                                    </p>
+                                    <a href="09_03_about_SDGs_detail.html" class="btn">READ MORE</a>
+                                    <span class="arrow-left"></span>
+                                </div>
+                            <div class="right-grid grid-three col-xs-6 col-md-6 col-lg-6">
+                                    <div class="img-arrow"></div>
+                                    <h2>
+                                        BACKGROUND AND INTRODUCTION <br>OF SDG GOALS
+                                    </h2>
+                                    <p>
+                                        The Sustainable Development Goals (SDGs) were born at the United Nations Conference on...
+                                    </p>
+                                    <a href="09_05_about_SDGs_detail.html" class="btn">READ MORE</a>
+                                    <span class="arrow-right"></span>
+                                </div>
+                            <div class="right-grid grid-four col-xs-6 col-md-6 col-lg-6">
+                                    <h2>
+                                        WHY WE NEED THE UN’S SUSTAINABLE DEVELOPMENT GOALS
+                                    </h2>
+                                    <p>
+                                        Sustainable development is the central drama of our time. The world’s governments are currently negotiating a set of Sustainable ...
+                                    </p>
+                                    <a href="09_04_about_SDGs_detail.html" class="btn">READ MORE</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <ul>
+                            <li><img src="17%20icons_new/E_SDG_Icons-01.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-02.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-03.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-04.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-05.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-06.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-07.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-08.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-09.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-10.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-11.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-12.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-13.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-14.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-15.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-16.jpg" alt=""></li>
+                            <li><img src="17%20icons_new/E_SDG_Icons-17.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row2">
+                <div id="part2" class="box part2">
+                    <div class="box-body row">
+                            <div class="col-sm-8 map-wrapper">
+                                <h1 class="left-title">
+                                    <span class="current">YOUTH4SDG ADVOCATE</span>
+                                </h1>
+                                <div class="left-body">
+                                    <div id="map" style="height: 500px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 hub-wrapper">
+                                <h1 class="right-title">
+                                    <span>YOUTH4SDG HUB</span>
+                                </h1>
+                                <div class="right-body right-body-one">
+                                    <h2>About Youth Advocate & <br>Ambassador Program</h2>
+                                    <p>
+                                        This program aims to spread SDGs knowledge
+                                        and promote SDGs actions by recruiting and
+                                        supporting youth to learn and practice SDGs.
+                                        Young people who are interested in the SDGs
+                                        and willing to promote SDGs among their
+                                        communities will be recruited as Youth4SDG
+                                        Advocates. Advocates will join in a series
+                                        of SDGs actions and activities including promoting
+                                        MY World 2030 Survey. Among the Advocates,
+                                        those who launch their own SDGs actions,
+                                        mobilize a fairly large number of young people
+                                        to join the campaigns, well promote MY World
+                                        2030 Survey and other initiatives related to
+                                        the SDGs and demonstrate strong leadership in
+                                        the process will be qualified for the title
+                                        of Youth4SDG Ambassador.
+                                    </p>
+                                    <a href="04_advocate_search.html" class="btn">Search Nearby Advocate</a>
+                                    <a href="05_advocate_application.html" class="btn">Become Advocate NOW！</a>
+                                </div>
+                                <div class="right-body right-body-two hidden">
+                                    <h2>About Youth4SDG Hub Program</h2>
+                                    <p>
+                                        Youth4SDG Hub is a global network of youth
+                                        groups and organizations that are interested
+                                        in learning, advocating and acting for the
+                                        Sustainable Development Goals. To become a
+                                        Youth4SDG Hub partner, an organization will
+                                        not only join this global network to share
+                                        and work with others, but also be supported
+                                        by Youth4SDG secretariat through a various
+                                        of activities, information and training
+                                        opportunities.
+                                    </p>
+                                    <a href="07_hub_search.html" class="btn">Search Hub Around You ！</a>
+                                    <a href="08_hub_application.html" class="btn">Apply For Hub ！</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row row3">
+                <div id="part3" class="box part3">
+                    <div class="box-title">
+                        <h1><span class="action-number">7</span> Youth Actions</h1>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            SDGs Action Database is a database for collecting youth’s actions, solutions and practices in achieving the SDGs and it is also a place to share experiences
+                            and best practices among youth and institutes. Based on these data, findings will be published as reports. Please make your contributions by submitting your actions!
+                        </p>
+                        <ul class="grid">
+                            <li><img src="icon-17/1-15.png" alt=""></li>
+                            <li><img src="icon-17/1-16.png" alt=""></li>
+                            <li><img src="icon-17/1-05.png" alt=""></li>
+                            <li><img src="icon-17/1-04.png" alt=""></li>
+                            <li><img src="icon-17/1-17.png" alt=""></li>
+                            <li><img src="icon-17/1-01.png" alt=""></li>
+                            <li><img src="icon-17/1-06.png" alt=""></li>
+                            <li><img src="icon-17/1-14.png" alt=""></li>
+                            <li><img src="icon-17/1-13.png" alt=""></li>
+                            <li><img src="icon-17/1-08.png" alt=""></li>
+                            <li><img src="icon-17/1-11.png" alt=""></li>
+                            <li><img src="icon-17/1-10.png" alt=""></li>
+                            <li><img src="icon-17/1-09.png" alt=""></li>
+                            <li><img src="icon-17/1-07.png" alt=""></li>
+                            <li><img src="icon-17/1-12.png" alt=""></li>
+                            <li><img src="icon-17/1-03.png" alt=""></li>
+                            <li><img src="icon-17/1-02.png" alt=""></li>
+                        </ul>
+
+                        <el-row class="action-wrapper first-page page-1 active-page">
+                            <template v-for="item in pageData1">
+                                <div class="action-list clearfix">
+                                    <el-col :span="18" class="action-column-1">
+                                            <h3>{{ item.actionName }}</h3>
+                                            <p>{{ item.description }}</p>
+                                    </el-col>
+                                    <el-col :span="6" class="action-column-2">
+                                            <h3 class="organization">{{ item.organization }}</h3>
+                                            <div class="desc-group">
+                                                <span><img :src="item.goal1"></span>
+                                                <span><img :src="item.goal2"></span>
+                                                <span><img :src="item.goal3"></span>
+                                                <span class="list-detail">&gt;</span>
+                                            </div>
+                                    </el-col>
+                                </div>
+                            </template>
+                        </el-row>
+                        <el-row class="action-wrapper page-2 hidden">
+                            <template v-for="item in pageData2">
+                                <div class="action-list clearfix">
+                                    <el-col :span="18" class="action-column-1">
+                                        <h3>{{ item.actionName }}</h3>
+                                        <p>{{ item.description }}</p>
+                                    </el-col>
+                                    <el-col :span="6" class="action-column-2">
+                                        <h3 class="organization">{{ item.organization }}</h3>
+                                        <div class="desc-group">
+                                            <span><img :src="item.goal1"></span>
+                                            <span><img :src="item.goal2"></span>
+                                            <span><img :src="item.goal3"></span>
+                                            <span class="list-detail">&gt;</span>
+                                        </div>
+                                    </el-col>
+                                </div>
+                            </template>
+                        </el-row>
+                        <el-row class="action-wrapper last-page page-3 hidden">
+                            <template v-for="item in pageData3">
+                                <div class="action-list clearfix">
+                                    <el-col :span="18" class="action-column-1">
+                                        <h3>{{ item.actionName }}</h3>
+                                        <p>{{ item.description }}</p>
+                                    </el-col>
+                                    <el-col :span="6" class="action-column-2">
+                                        <h3 class="organization">{{ item.organization }}</h3>
+                                        <div class="desc-group">
+                                            <span><img :src="item.goal1"></span>
+                                            <span><img :src="item.goal2"></span>
+                                            <span><img :src="item.goal3"></span>
+                                            <span class="list-detail">&gt;</span>
+                                        </div>
+                                    </el-col>
+                                </div>
+                            </template>
+                        </el-row>
+                        <el-row :gutter="10" class="edit-btn">
+                            <el-col :span="6" :offset="1"><a class="btn page-btn previous-page" disabled="disabled">Previous Page</a></el-col>
+                            <el-col :span="6" :offset="1"><a class="btn page-btn next-page">Next Page</a></el-col>
+                            <el-col :span="9" :offset="1"><a href="10_action_application.html" class="btn">Share Your Action NOW！</a></el-col>
+                        </el-row>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row4">
+                <div id="part4" class="box part4">
+                    <div class="box-title">
+                        <h1>Our Project</h1>
+                    </div>
+                    <div class="box-body">
+                        <el-row class="project-wrapper first-page page-1 active-page">
+                            <template v-for="item in pageProjectData1">
+                                <div class="project-list clearfix">
+                                    <el-col :span="6" class="project-column-1">
+                                        <img :src="item.logo">
+                                    </el-col>
+                                    <el-col :span="18" class="project-column-2">
+                                        <h3>{{ item.title }}</h3>
+                                        <p>{{ item.text }}</p>
+                                    </el-col>
+                                </div>
+                            </template>
+                        </el-row>
+                        <el-row class="project-wrapper last-page page-2 hidden">
+                            <template v-for="item in pageProjectData2">
+                                <div class="project-list clearfix">
+                                    <el-col :span="6" class="project-column-1">
+                                        <img :src="item.logo">
+                                    </el-col>
+                                    <el-col :span="18" class="project-column-2">
+                                        <h3>{{ item.title }}</h3>
+                                        <p>{{ item.text }}</p>
+                                    </el-col>
+                                </div>
+                            </template>
+                        </el-row>
+                        <el-row :gutter="10" class="edit-btn">
+                            <el-col :span="6" :offset="5"><a class="btn page-btn previous-page" disabled="disabled">Previous Page</a></el-col>
+                            <el-col :span="6" :offset="2"><a class="btn page-btn next-page">Next Page</a></el-col>
+                        </el-row>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row5">
+                <div id="part5" class="box part5">
+                    <div class="box-title">
+                        <h1>Join Us</h1>
+                    </div>
+                    <div class="box-body">
+                        <h2>If you are from an organization...</h2>
+                        <p>
+                            Enterprises, government departments, academic institution, foundations, NGOs and
+                            associations are all welcomed to register as organization users of Youth4SDG platform
+                            and post information about sustainable development actions here, including:
+                            Recruitment of youth employees, interns and volunteers
+                            Recruitment of youth participants of SDGs events, such as campaigns, workshops,
+                            summer camps, competitions etc.
+                            Or you can contact us to be our partner in existing projects, or develop new projects for
+                            youth SDGs actions.
+                        </p>
+                        <h3>CONTACT US</h3>
+                        <el-row class="input-group">
+                            <el-col :span="12" class="input-wrapper name-input">
+                                <input type="text" class="" placeholder="Name">
+                            </el-col>
+                            <el-col :span="12" class="input-wrapper email-input">
+                                <input type="text" class="" placeholder="Email">
+                            </el-col>
+                            <el-col :span="12" class="input-wrapper phone-input">
+                                <input type="text" class="" placeholder="Phone">
+                            </el-col>
+                            <el-col :span="12" class="input-wrapper title-input">
+                                <input type="text" class="" placeholder="Title">
+                            </el-col>
+                            <el-col :span="24" class="input-wrapper organization-input">
+                                <input type="text" class="" placeholder="Organization Name">
+                            </el-col>
+                        </el-row>
+                        <el-row class="edit-btn">
+                            <el-col :span="6" :offset="9"><a class="btn">Send</a></el-col>
+                        </el-row>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--main footer-->
+        <footer>
+            <el-row :gutter="20">
+                <el-col :span="6" :offset="1">
+                    <p>PROGRAM</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">Advocate</a></li>
+                        <li><a href="javascript:void(0)">Hub</a></li>
+                        <li><a href="javascript:void(0)">Youth Actions</a></li>
+                        <li><a href="javascript:void(0)">Projects</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="6">
+                    <p>SOCIAL MEDIA</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">Facebook</a></li>
+                        <li><a href="javascript:void(0)">Twitter</a></li>
+                        <li><a href="javascript:void(0)">Weibo</a></li>
+                        <li><a href="javascript:void(0)">Wechat</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="6">
+                    <p>PARTICIPATE</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">About Us</a></li>
+                        <li><a href="javascript:void(0)">Join Us</a></li>
+                        <li><a href="javascript:void(0)">Member Center</a></li>
+                    </ul>
+                </el-col>
+                <el-col :span="5">
+                    <p>INFORMATION</p>
+                    <ul>
+                        <li><a href="javascript:void(0)">News</a></li>
+                        <li><a href="javascript:void(0)">SDGs</a></li>
+                    </ul>
+                </el-col>
+            </el-row>
+        </footer>
+    </div>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/mapbox/mapbox.js'></script>
+    <link href='css/api.mapbox.css' rel='stylesheet' />
+    <!--<link href='js/mapbox/mapbox.css' rel='stylesheet' />-->
+    <script src="plugins/vue/vue.js"></script>
+    <!-- 引入组件库 element-ui -->
+    <script src="plugins/element-ui/index.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
