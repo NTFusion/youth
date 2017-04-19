@@ -1182,16 +1182,15 @@ footer a:hover,footer a:visited{
 .action-application-box .box-footer .btn,
 .action-detail-box .box-footer .btn{
     display: block;
-    width: 822px;
     margin: 0 auto;
     margin-top: 46px;
     margin-bottom: 48px;
     color: #FFFFFF;
     background-color: #00acd6;
     font-size: 30px;
-    font-weight: bold;
     border-radius: 10px;
     height: 58px;
+    width:92%;
 }
 #advocate-application-page footer{
     margin-top: 0;
@@ -1277,21 +1276,21 @@ footer a:hover,footer a:visited{
     padding:0;
 }
 
-.register-box .left-side{
+.register-box .form-container{
     padding:0;
     border-right: 2px solid #3b3c3c;
 }
-.register-box .left-side .telephone-code-form div,
+.register-box .form-container .telephone-code-form div,
 .reset-password-box .box-body .account-form div{
     padding:0;
 }
-.register-box .left-side h2 {
+.register-box .form-container h2 {
     color: #00acd6;
     text-align: center;
     font-size: 32px;
     margin: 0 0 80px 0;
 }
-.register-box .left-side .telephone-code-form .btn,
+.register-box .form-container .telephone-code-form .btn,
 .reset-password-box .box-body .account-form .btn{
     background: #27b1d3;
     border:none;
@@ -1300,13 +1299,13 @@ footer a:hover,footer a:visited{
     border-radius:0;
 }
 
-.register-box .right-side{
+.register-box .sidebar-container{
     padding:0;
 }
-.register-box .right-side div{
+.register-box .sidebar-container div{
     padding:0;
 }
-.register-box .right-side a{
+.register-box .sidebar-container a{
     display: table;
     margin-bottom:60px;
     height: 118px;
@@ -1314,7 +1313,7 @@ footer a:hover,footer a:visited{
     width:100%;
     background: #27b1d3;
 }
-.register-box .right-side a p{
+.register-box .sidebar-container a p{
     display:table-cell;
     color: #fff;
     font-size: 30px;
@@ -1331,6 +1330,7 @@ footer a:hover,footer a:visited{
     background-color: #00acd6;
     font-size: 30px;
     border-radius: 5px;
+    margin-top:30px;
 }
 
 
@@ -1357,13 +1357,33 @@ footer a:hover,footer a:visited{
         padding-top: 0;
     }
 
-    .register-box .left-side{
-        border:none;
+    .register-box .form-container{
+        border-right:none;
+        border-bottom:2px solid #3b3c3c;
+        padding-bottom:75px;
     }
-    .register-box .right-side{
-        margin-top:50px;
+    .register-box .sidebar-container{
+        margin-top:75px;
+    }
+    .register-box .sidebar-container a{
+        margin-bottom:30px;
+    }
+
+    .reset-password-box .box-body .form-group{
+        margin-bottom:10px;
     }
 }
+@media (max-width: 992px) {
+    .register-box .box-body .form-group{
+        margin-bottom:10px;
+    }
+    .register-box .form-container h2{
+        margin-bottom:50px;
+    }
+}
+
+
+
 
 /********* member center ***********/
 .member-center-box,
@@ -1586,7 +1606,6 @@ footer a:hover,footer a:visited{
 .advocate-search-box,
 .advocate-detail-box,
 .action-detail-box{
-    margin-top: 100px;
     padding-top: 30px;
 }
 .hub-search-box .box-title,
@@ -1685,36 +1704,42 @@ footer a:hover,footer a:visited{
     line-height: 48px;
     margin-top: 9px;
 }
+
+
+
 .advocate-detail-box .box-body{
     padding: 20px 0;
 }
-.advocate-detail-box .left-side a{
+.advocate-detail-box .head-img img{
     display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #00acd6;
+    width:100%;
 }
 .advocate-detail-box label{
-    display: inline-block;
-    width: 150px;
     font-size: 18px;
     font-weight: bold;
 }
 
 .advocate-detail-box p{
-    display: inline-block;
-    width: 150px;
     font-size: 18px;
 }
-.advocate-detail-box .right-side label,
-.advocate-detail-box .right-side p{
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
+.advocate-detail-box .advocate-detail-content{
+    padding-left:50px;
+}
+.advocate-detail-box .advocate-detail-content .form-group{
+    margin-bottom:50px;
 }
 
-
+@media (max-width: 768px) {
+    .advocate-detail-box .advocate-detail-content{
+        padding:0;
+    }
+    .advocate-detail-box .advocate-detail-content .form-group{
+        margin-bottom:20px;
+    }
+    .advocate-detail-box .head-img img{
+        margin-bottom:30px;
+    }
+}
 
 
 
