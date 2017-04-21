@@ -1453,16 +1453,14 @@ footer a:hover,footer a:visited{
 .member-center-box #tab-two .right-side label{
     width: 138px;
 }
-.member-center-box #tab-two .Choose-Sustainable label,
-.action-detail-box .Choose-Sustainable label{
+.member-center-box #tab-two .Choose-Sustainable label{
     width: 100%;
 }
 .member-center-box #tab-three label{
     display: block;
     width: 100%;
 }
-.member-center-box #tab-two .Choose-Sustainable span,
-.action-detail-box .Choose-Sustainable span{
+.member-center-box #tab-two .Choose-Sustainable span{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -1515,181 +1513,6 @@ footer a:hover,footer a:visited{
 }
 .upload{
     margin-top: -6px;
-}
-
-
-
-
-
-
-/********* action detail ***********/
-.action-detail-box .information-edit{
-    border-bottom: 2px solid #00acd6;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.action-detail-box label{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.action-detail-box .information-edit label{
-    width: 180px;
-}
-.action-detail-box .text-group>label{
-    width: 100%;
-    margin: 5px 0;
-}
-.action-detail-box .information-edit .right-side label{
-    margin-bottom: 15px;
-}
-.action-detail-box .information-edit .Organization-form label{
-    width: 280px;
-
-}
-.action-detail-box p{
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.action-detail-box .information-edit p{
-    display: inline-block;
-}
-.action-detail-box .Choose-Sustainable label{
-    width: 100%;
-}
-.action-detail-box .information-edit .right-side{
-    border-left: 1px solid #333333;
-}
-.action-detail-box .text-group{
-    border-bottom: 1px solid #333333;
-    padding: 10px;
-}
-.action-detail-box .resources-devoted-text-group{
-    border-bottom: none;
-}
-.action-detail-box .text-group .form-group{
-    border-bottom: 1px dashed #00acd6;
-}
-.action-detail-box .deliverables-text-group .form-group:last-child{
-    border-bottom: none;
-}
-.action-detail-box .deliverables-text-group .form-group label{
-    text-align: right;
-    padding-right: 40px;
-}
-.action-detail-box .resources-devoted-text-group label{
-    text-align: left;
-}
-
-
-
-
-
-
-
-/********* hub search /advocate search ***********/
-.hub-search-box,
-.advocate-search-box,
-.advocate-detail-box,
-.action-detail-box{
-    padding-top: 30px;
-}
-.hub-search-box .box-title,
-.advocate-search-box .box-title{
-    margin: 0 0 20px 0;
-    text-align: center;
-}
-.advocate-search-box .box-title h2{
-    font-weight: bold;
-    color: #66ccff;
-}
-.advocate-search-box .box-body .right-side a.btn{
-    display: block;
-    padding: 0;
-    width: 274px;
-    height: 33px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-    background-color: #00acd6;
-    font-size: 20px;
-    line-height: 33px;
-    border-radius: 5px;
-}
-.hub-search-box .right-side,
-.advocate-search-box .right-side{
-    border-left: 2px solid #2a6496;
-}
-.hub-search-box .right-side .form-group{
-    margin: 50px 0;
-}
-.advocate-search-box .right-side .form-group{
-    margin: 12px 0 40px 15px;
-}
-.hub-search-box .right-side label,
-.advocate-search-box .right-side label{
-    display: block;
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 5px;
-}
-.hub-search-box .right-side input,
-.hub-search-box .right-side button,
-.advocate-search-box .right-side input,
-.advocate-search-box .right-side button{
-    width: 300px;
-    height: 26px;
-}
-.hub-search-box .btn-group.location button,
-.advocate-search-box .btn-group.location button{
-    width: 87px;
-}
-.hub-search-box .member-list,
-.advocate-search-box .member-list{
-    margin: 20px 0;
-    border-top: 1px solid #333333;
-}
-.hub-search-box .member-list ul li,
-.advocate-search-box .member-list ul li{
-    padding: 13px 0 17px 0;
-    border-bottom: 1px solid #333333;
-}
-.hub-search-box .member-list ul li .left-body{
-    border-right: 1px solid #333333;
-}
-.hub-search-box .member-list ul li .left-body h3,
-.advocate-search-box .member-list ul li .left-body h3{
-    margin-top: 19px;
-    font-size: 20px;
-    font-weight: bold;
-},
-.hub-search-box .member-list ul li .right-body h3,
-.advocate-search-box .member-list ul li .right-body h3{
-    margin-top: 19px;
-    font-size: 20px;
-}
-.hub-search-box .member-list ul li p,
-.advocate-search-box .member-list ul li p{
-    font-size: 20px;
-    height: 25px;
-}
-.advocate-search-box .member-list ul li .left-body a{
-    display: block;
-    width: 81px;
-    height: 110px;
-    margin-left: 30px;
-    background-color: #00acd6;
-}
-.advocate-search-box .member-list ul li .right-body p:first-child{
-    margin-top: 5px;
-}
-.advocate-search-box .member-list ul li .more-information{
-    width: 120px;
-    height: 62px;
-    font-size: 24px;
-    line-height: 48px;
-    margin-top: 9px;
 }
 
 
@@ -1756,7 +1579,22 @@ footer a:hover,footer a:visited{
 .hub-application-box .information-edit .form-group p,
 .hub-application-box .information-edit .right-side div,
 .hub-application-box .text-group label,
-.hub-application-box .text-group p{
+.hub-application-box .text-group p,
+.action-detail-box .information-edit .left-side,
+.action-detail-box .information-edit .left-side .form-group,
+.action-detail-box .information-edit .left-side .Choose-Sustainable,
+.action-detail-box .information-edit .right-side,
+.action-detail-box .text-group .form-group label,
+.action-detail-box .text-group .form-group p,
+.hub-search-box .left-side,
+.hub-search-box .right-side,
+.hub-search-box .right-side .form-group label,
+.hub-search-box .right-side .form-group .btn-group,
+.hub-search-box .member-list,
+.hub-search-box .member-list .left-body,
+.hub-search-box .member-list .right-body,
+.advocate-search-box .left-side,
+.advocate-search-box .right-side{
     padding:0;
 }
 
@@ -1978,6 +1816,213 @@ footer a:hover,footer a:visited{
         float: none;
     }
 }
+
+/********* action detail ***********/
+.action-detail-box label,
+.action-detail-box p{
+    font-size:18px;
+    display: inline-block;
+}
+.action-detail-box .information-edit{
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding-bottom:30px;
+}
+.action-detail-box .information-edit .form-group{
+    margin-bottom:30px;
+}
+.action-detail-box .information-edit label{
+    font-weight: bold;
+    margin-right:30px;
+}
+
+.action-detail-box .information-edit .left-side{
+    border-right: 1px solid #333333;
+    padding-right:15px;
+}
+.action-detail-box .information-edit .Choose-Sustainable ul,
+.action-detail-box .information-edit .Choose-Sustainable ul li{
+    display: inline-block;
+}
+.action-detail-box .information-edit .Choose-Sustainable ul li{
+    margin-right:10px;
+}
+.action-detail-box .information-edit .right-side{
+    padding-left:30px;
+}
+.action-detail-box .text-group{
+    margin-bottom:30px;
+    padding-bottom:20px;
+    border-bottom: 1px solid #333333;
+}
+.action-detail-box .text-group .form-group{
+    padding:10px 0;
+}
+.action-detail-box .deliverables-text-group .form-group{
+    border-bottom: 1px dashed #000;
+}
+.action-detail-box .deliverables-text-group .form-group:last-child{
+    border-bottom: none;
+}
+
+.action-detail-box .resources-devoted-text-group{
+    border-bottom: none;
+}
+
+@media (max-width: 767px) {
+    .action-detail-box label,
+    .action-detail-box p{
+        display: block;
+    }
+    .action-detail-box .information-edit .left-side{
+        border-right:0;
+        border-bottom:1px solid #000;
+        padding-bottom:30px;
+        margin-bottom:30px;
+        padding-right:0;
+    }
+    .action-detail-box .information-edit .right-side{
+        padding-left:0;
+    }
+}
+
+
+/********* hub search /advocate search ***********/
+.hub-search-box .right-side input,
+.hub-search-box .right-side button,
+.advocate-search-box .right-side input,
+.advocate-search-box .right-side button{
+    height: 26px;
+}
+
+.hub-search-box .member-list ul li .left-body h3,
+.hub-search-box .member-list ul li .right-body h3,
+.advocate-search-box .member-list ul li .right-body h3,
+.advocate-search-box .member-list ul li .left-body h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hub-search-box .box-title,
+.advocate-search-box .box-title{
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #27b1d3;
+}
+.hub-search-box .right-side label,
+.advocate-search-box .right-side label{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.hub-search-box .member-list ul li p,
+.advocate-search-box .member-list ul li p{
+    font-size: 20px;
+}
+.hub-search-box .left-side{
+    border-right:2px solid #000;
+    padding-right:30px;
+}
+
+.hub-search-box .right-side{
+    padding-left:30px;
+}
+.hub-search-box .right-side .form-group{
+    margin: 100px 0;
+}
+.hub-search-box .right-side .form-group .location{
+    width:31%;
+    margin-right:3%;
+
+}
+.hub-search-box .right-side .form-group .location:last-child{
+    margin-right:0;
+}
+.hub-search-box .right-side .form-group input,
+.hub-search-box .right-side .form-group .btn{
+    border:1px solid #000;
+    border-radius:0
+}
+
+.hub-search-box .right-side .form-group .btn-search{
+    width:100%;
+    text-align: center;
+    background: #27b1d3;
+    color: #fff;
+    padding:0;
+    font-size:20px;
+    height:33px;
+    border:none;
+}
+.hub-search-box .member-list ul li{
+    padding:20px 0;
+    border-top: 1px solid #333333;
+
+}
+.hub-search-box .member-list .right-body{
+    border-left: 1px solid #333333;
+    padding-left:30px;
+}
+
+@media (max-width: 767px) {
+    .hub-search-box .right-side,
+    .hub-search-box .left-side{
+        padding:0;
+    }
+    .hub-search-box .left-side{
+        border-right:0;
+        border-bottom:1px solid #000;
+        padding-bottom:30px;
+    }
+    .hub-search-box .right-side .form-group{
+        margin:50px 0;
+    }
+    .hub-search-box .member-list .right-body{
+        border-left:0;
+        padding:0;
+    }
+    .hub-search-box .right-side .form-group .location{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+
+}
+
+
+.advocate-search-box .box-body .right-side a.btn{
+    display: block;
+    padding: 0;
+    width: 274px;
+    height: 33px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    background-color: #00acd6;
+    font-size: 20px;
+    line-height: 33px;
+    border-radius: 5px;
+}
+
+.advocate-search-box .member-list ul li .left-body a{
+    display: block;
+    width: 81px;
+    height: 110px;
+    margin-left: 30px;
+    background-color: #00acd6;
+}
+.advocate-search-box .member-list ul li .right-body p:first-child{
+    margin-top: 5px;
+}
+.advocate-search-box .member-list ul li .more-information{
+    width: 120px;
+    height: 62px;
+    font-size: 24px;
+    line-height: 48px;
+    margin-top: 9px;
+}
+
+
 
 
 /*     详情页样式       */
