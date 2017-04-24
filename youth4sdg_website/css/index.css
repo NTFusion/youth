@@ -1154,6 +1154,11 @@ footer a:hover,footer a:visited{
     line-height: 50px;
     margin-bottom:80px;
 }
+.login-box .box-body .form-group a:hover,
+.reset-password-box .box-body .form-group a:hover,
+.register-box .box-body .form-group a:hover{
+    text-decoration: underline;
+}
 
 .login-box .box-body .form-group input,
 .reset-password-box .box-body .form-group input,
@@ -2282,7 +2287,9 @@ footer a:hover,footer a:visited{
     border-bottom:2px solid #3b3c3c;
     display: inline-block;
 }
-
+.list-news-box a{
+    color: #000;
+}
 .list-news-box img{
     width:40%;
     float:left;
