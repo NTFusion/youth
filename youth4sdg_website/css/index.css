@@ -792,6 +792,9 @@ header ul li a{
 	font-size:22px;
 	line-height:33px;
 }
+.part3 .box-body .desc-group a{
+    display: inline-block;
+}
 .part3 .action-wrapper{
     margin-bottom: 32px;
 }
