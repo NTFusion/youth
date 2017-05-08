@@ -61,7 +61,7 @@ nav {
     border-bottom: 1px solid #dddddd;
 }
 .logo{
-    margin: 30px auto;
+    margin: 19px auto;
     text-align: center;
     padding-left: 0;
     padding-right: 0;
@@ -163,6 +163,9 @@ header ul li a{
     padding-right: 4%;
     padding-top:100px;
 }
+.index_container{
+    padding-top:50px;
+}
 .carousel-banner{margin-top:100px;}
 
 .carousel-inner .item{text-align:center}
@@ -258,12 +261,15 @@ header ul li a{
     position: relative;
     width: 100%;
     overflow: hidden;
+    height:196px;
+    border:5px solid #2f65d0;
+    border-radius:20px;
 }
 .grid-model-item a .cover span{
     position: absolute;
     display: block;
     width: 80%;
-    top: 72%;
+    top: 80%;
     left: 10%;
     font-size: 12px;
     line-height: 12px;
@@ -287,17 +293,32 @@ header ul li a{
 .grid-model-right a img{height: 100%;}
 .grid-model.news-preview{border:none; padding:35px 15px;}
 .news-preview .grid-model-item a .cover span{
-	text-overflow: -o-ellipsis-lastline;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
 	color:#fff;
-	left:11%;
-	width:80%;
+	left:0;
+	width:100%;
+    background: #2f65d0;
+    top:70%;
+    background: #2f65d0;
+    opacity:0.8;
+    height:80px;
 }
-.news-preview .grid-model-item a .cover span:hover{
+.news-preview .grid-model-item a .cover p{
+    position: absolute;
+    top:75%;
+    text-align: left;
+    color: #fff;
+    z-index: 999;
+    left:11%;
+    width:80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+
+}
+.news-preview .grid-model-item a .cover p:hover{
 	color: #66ffff;
 }
 @media (max-width: 1000px) {
@@ -345,8 +366,8 @@ header ul li a{
 }
 .part1 .box-body .left-side{
     padding: 20px;
-    background: url(../images/aboutSDGs-1.jpg) no-repeat;
-    background-size:104%;
+    background: url(../images/SDGs-1.png) no-repeat;
+    background-size:121%;
 	border-bottom-left-radius:6px;
 	border-top-left-radius:6px;
 }
@@ -387,7 +408,7 @@ header ul li a{
     -webkit-box-orient: vertical;
 }
 .part1 .box-body .right-side .grid-two{
-    background: url(../images/aboutSDGs-2.jpg) no-repeat;
+    background: url(../images/SDGs-2.png) no-repeat;
     background-size: cover;
 	border-top-right-radius:6px;
 }
@@ -410,7 +431,7 @@ header ul li a{
     
 }
 .part1 .box-body .right-side .grid-three{
-    background: url(../images/aboutSDGs-3.jpg) no-repeat;
+    background: url(../images/SDGs-3.png) no-repeat;
     background-size: cover;
 }
 @media (max-width: 992px) {
