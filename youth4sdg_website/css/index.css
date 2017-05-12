@@ -53,6 +53,9 @@ nav {
     width: 100%;
     height: 100px;
 }
+.navbar-header{
+    background: #fff;
+}
 .navbar-default,.nav.navbar-nav,
 .navbar-collapse{
     background-color: #FFFFFF;
@@ -110,9 +113,6 @@ header ul li a{
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         margin-top: -10px;
     }
-    .container-fluid {
-        border-bottom: none;
-    }
     .navbar-toggle{
         margin-top: -70px;
         margin-right: 15px;
@@ -126,7 +126,14 @@ header ul li a{
     }
 
 }
+.navbar-default{
+    border-color:#ffffff;
+}
+
 @media (min-width: 768px) {
+    .navbar-default{
+        border-color:#ffffff;
+    }
     .nav-tabs{
         border-bottom: none;
     }
@@ -162,6 +169,11 @@ header ul li a{
     padding-left: 4%;
     padding-right: 4%;
     padding-top:100px;
+}
+@media (max-width: 768px) {
+    .container {
+        padding-top:150px;
+    }
 }
 .index_container{
     padding-top:50px;
@@ -261,9 +273,8 @@ header ul li a{
     position: relative;
     width: 100%;
     overflow: hidden;
-    height:196px;
     border:5px solid #2f65d0;
-    border-radius:20px;
+    border-radius:10px;
 }
 .grid-model-item a .cover span{
     position: absolute;
@@ -1324,26 +1335,17 @@ footer a:hover,footer a:visited{
 
 
 /********* hub application ***********/
-.hub-application-box label,
 .member-center-box label,
 .action-application-box label{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
-    margin-bottom: 5px;
+    line-height:32px;
 }
 
 .btn-group .location button{
     margin-right: 20px;
 }
-.hub-application-box .information-edit p{
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-.hub-application-box .right-side{
-    border-left: 1px solid #333333;
-}
-
 .member-center-box textarea,
 .action-detail-box textarea{
     width: 984px;
@@ -1363,7 +1365,7 @@ footer a:hover,footer a:visited{
 .action-application-box .upload label{
     display: inline;
 }
-.hub-application-box .upload .btn,
+
 .member-center-box .upload .btn,
 .advocate-application-box .upload .btn,
 .action-application-box .upload .btn{
@@ -1389,21 +1391,15 @@ footer a:hover,footer a:visited{
 .action-detail-box .box-footer .btn{
     display: block;
     margin: 0 auto;
-    margin-top: 46px;
-    margin-bottom: 48px;
     color: #FFFFFF;
     background-color: #00acd6;
-    font-size: 30px;
-    border-radius: 10px;
-    height: 58px;
-    width:92%;
+    font-size: 20px;
+    border-radius: 3px;
+    height: 50px;
+    width:35%;
+    padding:0;
+    line-height:50px;
 }
-#advocate-application-page footer{
-    margin-top: 0;
-}
-
-
-
 
 /********* member center ***********/
 .member-center-box{
@@ -1475,9 +1471,11 @@ footer a:hover,footer a:visited{
 }
 .member-center-box #tab-two .form-group input,
 .action-application-box .form-group input,
-.advocate-application-box .form-group input{
+.advocate-application-box .form-group input,
+.advocate-application-box .form-group button{
     display: inline-block;
-    height: 26px;
+    height: 32px;
+    border-radius:3px;
 }
 .member-center-box #tab-two .right-side label{
     width: 138px;
@@ -1541,7 +1539,7 @@ footer a:hover,footer a:visited{
     font-size: 16px;
 }
 .upload{
-    margin-top: -6px;
+    overflow: hidden;
 }
 
 
@@ -1586,27 +1584,24 @@ footer a:hover,footer a:visited{
 
 /****   edit by Loo  ****/
 
-.action-application-box .left-side,
-.action-application-box .left-side div,
-.action-application-box .left-side label,
-.action-application-box .right-side,
-.action-application-box .right-side label,
-.advocate-application-box .information-edit .head-img,
-.advocate-application-box .information-edit .right-side,
-.advocate-application-box .information-edit .right-side .form-group,
-.advocate-application-box .information-edit .right-side .form-group label,
-.advocate-application-box .information-edit .right-side .form-group input,
-.advocate-application-box .information-edit .right-side .form-group p,
-.advocate-application-box .information-edit .btn-group,
+.action-application-box  div,
+.action-application-box label,
+.action-application-box  p,
+.action-application-box .description-form span,
+.advocate-application-box .form-group,
+.advocate-application-box .form-group label,
+.advocate-application-box .form-group input,
+.advocate-application-box .form-group p,
+.advocate-application-box .btn-group,
 .advocate-application-box .text-group,
+.advocate-application-box .text-group label,
+.advocate-application-box .text-group p,
 .advocate-application-box .upload,
 .advocate-application-box .upload div,
-.hub-application-box .information-edit .left-side,
-.hub-application-box .information-edit .right-side,
-.hub-application-box .information-edit .form-group label,
-.hub-application-box .information-edit .form-group .btn-group,
-.hub-application-box .information-edit .form-group p,
-.hub-application-box .information-edit .right-side div,
+.hub-application-box .form-group label,
+.hub-application-box .form-group .btn-group,
+.hub-application-box .form-group p,
+.hub-application-box  div,
 .hub-application-box .text-group label,
 .hub-application-box .text-group p,
 .action-detail-box .information-edit .left-side,
@@ -1638,27 +1633,41 @@ footer a:hover,footer a:visited{
 
 
 /******** action application **********/
-
-.action-application-box .left-side{
-    border-right:1px solid #000;
-}
-.action-application-box .left-side p{
-    padding-right:10px;
-}
-.action-application-box .left-side .left-side-left,
-.action-application-box .left-side .left-side-right
-{
-    padding-right:30px;
-}
-.action-application-box .right-side{
-    padding-left:30px;
-}
-.action-application-box .information-edit{
-    margin-bottom:50px;
+.succeed-input{
     display: inline-block;
+    background: url("../img/tick.png") no-repeat;
+    width:28px;
+    height:28px;
+    margin-left:20px;
 }
-.action-application-box .information-edit .form-group{
+.el-date-editor.el-input{
+    width:33%;
+}
+.el-date-picker__header{
+    background: #01add6;
+    color: #fff;
+    margin:0;
+}
+.el-picker-panel__icon-btn{
+    color: #fff;
+}
+.action-application-box .error-input{
+    border:1px solid red;
+}
+.el-date-table td.current:not(.disabled){
+    background-color: #01add6!important;
+}
+.action-application-box  .form-group{
+    margin-bottom:30px;
+}
+.action-application-box .spe{
     margin-bottom:15px;
+}
+.action-application-box .description-form span{
+    margin-left:12px;
+}
+.action-application-box .Choose-Sustainable{
+    margin-bottom:40px;
 }
 .action-application-box .Choose-Sustainable span{
     padding:10px 0;
@@ -1678,6 +1687,7 @@ footer a:hover,footer a:visited{
 .action-application-box .text-group,
 .action-application-box .text-group label{
     padding:0;
+    font-size:14px;
 }
 
 .action-application-box .text-group .form-group,
@@ -1710,66 +1720,82 @@ footer a:hover,footer a:visited{
     .action-application-box .right-side{
         padding:0;
     }
+    .el-date-editor.el-input{
+        width:100%;
+    }
 }
 
 /******** advocate   application **********/
-.advocate-application-box .information-edit{
-    margin-bottom:30px;
+.advocate-application-box{
+    position: relative;
 }
-.advocate-application-box .information-edit .head-img img{
+.advocate-application-box .photo{
+    background: pink;
+    position: absolute;
+    right:9%;
+    top:40px;
+    width:10%;
+    cursor: pointer;
+}
+.advocate-application-box .photo img{
     width:100%;
 }
-.advocate-application-box .information-edit .right-side .form-group{
-    height:70px;
+.advocate-application-box .form-group,
+.advocate-application-box .upload,
+.advocate-application-box .text-group{
+    margin-bottom:40px;
 }
-.advocate-application-box .information-edit .right-side .form-group p{
+.advocate-application-box .form-group label{
+    font-size:14px;
+    font-weight: normal;
+    line-height:32px;
+}
+.advocate-application-box  .text-group p,
+.advocate-application-box  .form-group p,
+.advocate-application-box .upload p{
     font-size:12px;
 }
-.advocate-application-box .information-edit .right-side{
-    padding-left:50px;
+.advocate-application-box  .text-group label{
+    font-size:18px;
+    font-weight:normal;
 }
-.advocate-application-box .information-edit .location{
+.advocate-application-box .location{
     margin-right:20px;
 }
-.advocate-application-box .information-edit button{
+.advocate-application-box button{
     width:100%;
     border-radius:0;
     height:26px;
     border:1px solid #000;
 }
 .advocate-application-box textarea{
-    width:100%;
     margin-top: 5px;
-    margin-bottom: 30px;
-}
-.advocate-application-box .upload label{
-    font-size:20px
-}
-.advocate-application-box .upload div{
-    float:left;
-}
-.advocate-application-box .upload p{
-    font-size:16px;
 }
 
+
 @media (max-width: 767px) {
-    .advocate-application-box .information-edit .right-side {
-        padding: 0;
+    .advocate-application-box .photo{
+        position: relative;
+        width:30%;
+        cursor: pointer;
+        right:0;
+        margin-bottom:60px;
+        top:0;
     }
-    .advocate-application-box .information-edit .head-img img{
-        margin-bottom: 30px;
+    .advocate-application-box .form-group{
+        margin-bottom:0;
     }
-    .advocate-application-box .information-edit .right-side .form-group input{
+    .advocate-application-box .form-group input{
         margin-bottom:20px;
     }
-    .advocate-application-box .information-edit .right-side .form-group label{
+    .advocate-application-box .form-group label{
         margin-bottom:5px;
     }
-    .advocate-application-box .information-edit .right-side .form-group p{
+    .advocate-application-box .form-group p{
         margin-top:-20px;
         margin-bottom:10px;
     }
-    .advocate-application-box .information-edit .right-side .form-group {
+    .advocate-application-box .form-group {
         height: auto;
     }
     .advocate-application-box .upload div{
@@ -1778,37 +1804,74 @@ footer a:hover,footer a:visited{
     .advocate-application-box .upload .btn{
         margin:0;
     }
-    .advocate-application-box .information-edit .right-side .form-group .btn-group{
+    .advocate-application-box .form-group .btn-group{
         margin-bottom:10px;
     }
 }
 
 
 /********* hub application ***********/
-.hub-application-box .information-edit .left-side{
-    padding-right:30px;
+.action-application-box .line,
+.hub-application-box .line{
+    border-bottom:1px dashed #27b1d3;
 }
-.hub-application-box .information-edit button{
-    height: 26px;
-    border-radius:0;
+.hub-application-box label{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height:32px;
 }
-.hub-application-box .information-edit .form-group{
+
+.hub-application-box p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.hub-application-box button{
+    height: 32px;
+    border-radius:3px;
+}
+.hub-application-box .form-group{
     margin-bottom:30px;
 }
-.hub-application-box .information-edit .right-side .left,
-.hub-application-box .information-edit .right-side .right{
-    padding-left:30px;
+.hub-application-box .upload{
+    margin:40px 0;
 }
-.hub-application-box .information-edit input{
-    height:26px;
+.hub-application-box .form-group p,
+.hub-application-box .text-group p,
+.hub-application-box .upload p,
+.advocate-application-box .upload p,
+.advocate-application-box .text-group p,
+.advocate-application-box .form-group p,
+.action-application-box .upload p,
+.action-application-box .text-group p,
+.action-application-box .form-group p
+{
+    color: #919292;
+    font-size:12px;
 }
-.hub-application-box .information-edit input,
-.hub-application-box .information-edit button,
+.hub-application-box .spe,
+{
+    margin-bottom:0;
+}
+.hub-application-box input{
+    height:32px;
+    border-radius: 3px;
+}
+.hub-application-box input,
+.hub-application-box  button,
 .hub-application-box .text-group textarea{
     border:1px solid #000;
 }
-.hub-application-box .information-edit .location{
-    margin-right:20px;
+.hub-application-box .location,
+.advocate-application-box .location{
+    width:30%;
+    margin-right:14px;
+}
+.hub-application-box .location:last-child,
+.advocate-application-box .location:last-child{
+    margin-right:0;
 }
 .hub-application-box .text-group{
     margin-bottom:30px;
@@ -1817,23 +1880,32 @@ footer a:hover,footer a:visited{
     padding:0;
     float:left;
 }
-.hub-application-box .upload label{
-    font-size:20px;
+.hub-application-box .upload label,
+.advocate-application-box .upload label{
+    font-size:18px;
+}
+.hub-application-box .text-group label{
+    font-size:18px;
 }
 .hub-application-box .upload p{
-    font-size:16px;
+    font-size:12px;
+}
+.hub-application-box .upload .btn,
+.advocate-application-box .upload .btn{
+    background-color: #00acd6;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height:47px;
+    padding:0;
+}
+.action-application-box .form-group .title,
+.hub-application-box .form-group .title{
+    font-size:18px;
+    color: #27b1d3;
 }
 @media (max-width: 767px) {
-    .hub-application-box .information-edit .left-side,
-    .hub-application-box .information-edit .right-side .left,
-    .hub-application-box .information-edit .right-side .right{
-        padding:0;
-    }
-    .hub-application-box .information-edit .right-side{
-        border-left:none;
-        border-top:1px solid #000;
-        padding-top:40px;
-    }
+
     .hub-application-box .location{
         margin-bottom:10px;
     }
