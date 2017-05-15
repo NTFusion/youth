@@ -929,7 +929,7 @@ footer{
     width: 100%;
     margin-top: 60px;
     background-color: #00acd6;
-    padding:50px 3%;
+    padding:50px 4%;
 }
 footer .item-one{
     width: 30%;
@@ -939,24 +939,32 @@ footer .item-four{
 }
 footer p{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: 20px;
 	font-weight:bold;
 }
-footer ul{
-    margin-top: 20px;
-}
+
 footer ul li{
     margin-bottom:8px;
 }
 footer a{
     color: #FFFFFF;!important;
-    font-size: 16px;
+    font-size: 12px;
 	cursor:pointer;
+    font-weight: normal;
 }
 footer a:hover,footer a:visited{
     text-decoration: underline;
     color: #73e9fb;
+}
+footer .spe{
+    margin-bottom:10px;
+}
+footer .spe-ul{
+    margin-bottom:15px;
+}
+footer input{
+    margin-right:20px;
 }
 /********* news list ***********/
 .box.news-list-box{
