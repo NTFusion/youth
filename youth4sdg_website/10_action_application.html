@@ -66,37 +66,37 @@
                     <div class="form-group row">
                         <label class="col-sm-offset-1 col-sm-3 col-xs-12">Action Title</label>
                         <input class="col-sm-4 col-xs-10" type="text">
-                        <span class="succeed-input col-sm-2"></span>
+                        <span class="col-sm-2"></span>
                     </div>
 
-                    <div class="form-group row Organization-form">
+                    <div class="form-group row organization-form">
                         <label class="col-sm-offset-1 col-sm-3 col-xs-12">Organization (s)</label>
-                        <input class="error-input col-sm-4 col-xs-10" type="text">
+                        <input class="col-sm-4 col-xs-10" type="text">
                         <span class="col-sm-2"></span>
                         <p class="col-sm-offset-1 col-sm-10 col-xs-12 ">*If more than one organization, please seperate them by semicolon.</p>
                     </div>
-                    <div class="Choose-Sustainable col-sm-offset-1 col-sm-10 col-xs-12">
+                    <div class="choose-sustainable col-sm-offset-1 col-sm-10 col-xs-12">
                     <label>Choose the Sustainable Development Goals that your action cover</label>
-                    <div>
-                        <span><img src="img/Action_03.png" alt=""></span>
-                        <span><img src="img/Action_04.png" alt=""></span>
-                        <span><img src="img/Action_05.png" alt=""></span>
-                        <span><img src="img/Action_06.png" alt=""></span>
-                        <span><img src="img/Action_07.png" alt=""></span>
-                        <span><img src="img/Action_08.png" alt=""></span>
-                        <span><img src="img/Action_09.png" alt=""></span>
-                        <span><img src="img/Action_10.png" alt=""></span>
-                        <span><img src="img/Action_11.png" alt=""></span>
-                        <span><img src="img/Action_12.png" alt=""></span>
-                        <span><img src="img/Action_13.png" alt=""></span>
-                        <span><img src="img/Action_14.png" alt=""></span>
-                        <span><img src="img/Action_15.png" alt=""></span>
-                        <span><img src="img/Action_16.png" alt=""></span>
-                        <span><img src="img/Action_17.png" alt=""></span>
-                        <span><img src="img/Action_18.png" alt=""></span>
-                        <span><img src="img/Action_19.png" alt=""></span>
+                    <ul>
+                        <li class="icon-action"><span></span><img src="icon/01.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/02.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/03.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/04.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/05.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/06.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/07.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/08.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/09.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/10.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/11.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/12.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/13.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/14.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/15.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/16.png" alt=""></li>
+                        <li class="icon-action"><span></span><img src="icon/17.png" alt=""></li>
 
-                    </div>
+                    </ul>
                 </div>
 
                     <div class="form-group row">
@@ -258,6 +258,16 @@
     <!-- 引入组件库 element-ui -->
     <script src="plugins/element-ui/index.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+
+
+            $(".action-application-box .choose-sustainable .icon-action").click(function () {
+                $(this).find("span").toggleClass("icon-active");
+            })
+
+    </script>
+
     <script>
         export default {
             data() {
@@ -283,7 +293,7 @@
                         }, {
                             text: '一周前',
                             onClick(picker) {
-                                const date = new Date();
+                                const date = new Date();sdd
                                 date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
                                 picker.$emit('pick', date);
                             }
@@ -294,6 +304,7 @@
                 };
             }
         };
+
     </script>
 </body>
 

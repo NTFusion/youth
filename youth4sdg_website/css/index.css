@@ -1674,20 +1674,36 @@ footer input{
 .action-application-box .description-form span{
     margin-left:12px;
 }
-.action-application-box .Choose-Sustainable{
+.action-application-box .choose-sustainable{
     margin-bottom:40px;
 }
-.action-application-box .Choose-Sustainable span{
+.action-application-box .choose-sustainable li{
     padding:10px 0;
     display: inline-block;
+    height:52px;
+    margin-right:5px;
+    border-bottom:2px solid #fff;
+    position: relative;
 }
 
-.action-application-box .Choose-Sustainable span:hover{
+.action-application-box .choose-sustainable li:hover{
+    height:52px;
     border-bottom:2px solid #27b1d3;
     cursor: pointer;
 }
-.action-application-box .Choose-Sustainable span img{
-    height:30px;
+
+.action-application-box .choose-sustainable li span.icon-active{
+    position: absolute;
+    right:0;
+    bottom:10px;
+    width:20px;
+    height:20px;
+    background: url(../icon/active.png);
+    background-size: cover;
+}
+
+.action-application-box .choose-sustainable .icon-action img{
+    height:100%;
 }
 .action-application-box .text-group{
     margin-bottom:30px;
@@ -1764,11 +1780,8 @@ footer input{
     font-size:12px;
 }
 .advocate-application-box  .text-group label{
-    font-size:18px;
+    font-size:14px;
     font-weight:normal;
-}
-.advocate-application-box .location{
-    margin-right:20px;
 }
 .advocate-application-box button{
     width:100%;
@@ -1872,14 +1885,13 @@ footer input{
 .hub-application-box .text-group textarea{
     border:1px solid #000;
 }
-.hub-application-box .location,
+.hub-application-box .form-group .location,
 .advocate-application-box .location{
-    width:30%;
-    margin-right:14px;
+    padding-right:15px;
 }
 .hub-application-box .location:last-child,
 .advocate-application-box .location:last-child{
-    margin-right:0;
+    padding-right:0;
 }
 .hub-application-box .text-group{
     margin-bottom:30px;
@@ -1890,10 +1902,12 @@ footer input{
 }
 .hub-application-box .upload label,
 .advocate-application-box .upload label{
-    font-size:18px;
+    font-size:14px;
+    font-weight:normal;
 }
 .hub-application-box .text-group label{
-    font-size:18px;
+    font-size:14px;
+    font-weight:normal;
 }
 .hub-application-box .upload p{
     font-size:12px;
